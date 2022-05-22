@@ -54,6 +54,22 @@ Returns: ``true/false``
 ``Group.IsEnemyOf(QueryAllyId: number, OptionCheckCache: boolean)``
 Returns: ``true/false``
 
+### Checking If Player is Ally (PARAMETERS: PLAYER: PLAYER)
+``local Role, GroupId = Group.IsPlayerAlly(Player: Player)``
+Returns:
+```
+AllyRole, AllyGroupId
+```
+(Returns ``false, false`` if not an ally)
+
+### Checking If Player is Enemy (PARAMETERS: PLAYER: PLAYER)
+``local Role, GroupId = Group.IsPlayerEnemy(Player: Player)``
+Returns:
+```
+EnemyRole, EnemyGroupId
+```
+(Returns ``false, false`` if not an enemy)
+
 ## Events
 Ensure ``Events`` is enabled when getting your ``GroupObject`` (default true)
 
