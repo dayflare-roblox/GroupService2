@@ -15,6 +15,9 @@ This will return an object with lots of feature rich functions!
 
 ### Getting a Group Member (PARAMETERS: USERID OR USERNAME)
 ``Group:GetMember(UserIdentifier: string or number)``
+Returns:
+```
+```
 
 ### Getting Ingame Group Members
 ``Group:GetIngameMembers()``
