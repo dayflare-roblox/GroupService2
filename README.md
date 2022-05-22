@@ -17,10 +17,28 @@ This will return an object with lots of feature rich functions!
 ``Group:GetMember(UserIdentifier: string or number)``
 Returns:
 ```
+{
+  ["HeadshotThumbnail"] = "rbxthumb://type=AvatarHeadShot&id=654872648&w=60&h=60",
+  ["IsPrimary"] = true,
+  ["Name"] = "dayflare",
+  ["Rank"] = 250,
+  ["Role"] = "Vice President",
+  ["UserId"] = 654872648
+}
 ```
 
 ### Getting Ingame Group Members
 ``Group:GetIngameMembers()``
+Returns:
+```
+{
+  {
+    Player = Player,
+    Rank = Rank,
+    Role = Role
+  }
+}
+```
 
 ### Getting Allies (PARAMETERS: RETURN AS GROUP OBJECT [TRUE/FALSE], UPDATECACHE: [TRUE/FALSE] (default false)
 ``Group:GetAllies(ReturnGroupObject: boolean, UpdateCacheBoolean: boolean)``
@@ -30,9 +48,11 @@ Returns:
 
 ### Checking Group Ally (PARAMETERS: GROUPID, CHECKCACHE: BOOLEAN)
 ``Group.IsAllyOf(QueryAllyId: number, OptionCheckCache: boolean)``
+Returns: ``true/false``
 
 ### Checking Group Enemy (PARAMETERS: GROUPID, CHECKCACHE: BOOLEAN)
 ``Group.IsEnemyOf(QueryAllyId: number, OptionCheckCache: boolean)``
+Returns: ``true/false``
 
 ## Events
 Ensure ``Events`` is enabled when getting your ``GroupObject`` (default true)
