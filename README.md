@@ -11,7 +11,7 @@ As standard most of the time, functions called will return a ``GroupObject`` typ
 Run this as standard: ``GroupService2:GetGroup(GroupId: number, GroupObjectSettings(optional))``
 This will return an object with lots of feature rich functions!
 
-``local Group = GroupService2:GetGroup(GroupId: number, GroupObjectSettings(optional))``
+``local GroupLoadedBoolean, Group = GroupService2:GetGroup(GroupId: number, GroupObjectSettings(optional)):await()``
 
 ### Getting a Group Member (PARAMETERS: USERID OR USERNAME)
 ``Group:GetMember(UserIdentifier: string or number)``
