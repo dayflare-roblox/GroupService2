@@ -79,6 +79,12 @@ Ensure ``Events`` is enabled when getting your ``GroupObject`` (default true)
 ### Special Member Left Game:
 ``Group.Data.SpecialPlayerLeft:Connect(function(Player, Mode, GroupId, GroupRole) end``
 
+### Modes:
+
+> Ally
+> Enemy
+> Member
+
 Any questions, message my portfolio server.
 [Discord Server](https://discord.gg/AUxEh8mGTx)
 
