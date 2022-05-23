@@ -13,6 +13,14 @@ This will return an object with lots of feature rich functions!
 
 ``local GroupLoadedBoolean, Group = GroupService2:GetGroup(GroupId: number, GroupObjectSettings(optional)):await()``
 
+Example:
+
+```
+G2:GetGroup(0, {["Events"] = true}):andThen(function(Group)
+	
+end)
+```
+
 ### Getting a Group Member (PARAMETERS: USERID OR USERNAME)
 ``Group:GetMember(UserIdentifier: string or number)``
 Returns:
