@@ -21,6 +21,8 @@ G2:GetGroup(0, {["Events"] = true}):andThen(function(Group)
 end)
 ```
 
+All of these funtions will return a group object. To get information about said group, reference ``Group.GroupInfo`` (This should print roblox's natural GetGroupInfoAsync data).
+
 ### Getting a Group Member (PARAMETERS: USERID OR USERNAME)
 ``Group:GetMember(UserIdentifier: string or number)``
 Returns:
