@@ -73,11 +73,11 @@ EnemyRole, EnemyGroupId
 ## Events
 Ensure ``Events`` is enabled when getting your ``GroupObject`` (default true)
 
-### Group Member Joined Game:
-``Group.Data.GroupPlayerJoinedGame:Connect(function(Player) end``
+### Special Member Joined Game:
+``Group.Data.SpecialPlayerJoined:Connect(function(Player, Mode, GroupId, GroupRole) end``
 
-### Group Member Left Game:
-``Group.Data.GroupPlayerLeftGame:Connect(function(Player) end``
+### Special Member Left Game:
+``Group.Data.SpecialPlayerLeft:Connect(function(Player, Mode, GroupId, GroupRole) end``
 
 Any questions, message my portfolio server.
 [Discord Server](https://discord.gg/AUxEh8mGTx)
